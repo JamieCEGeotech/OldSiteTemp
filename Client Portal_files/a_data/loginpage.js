@@ -1,0 +1,1 @@
+(function(i){i(document).ready(function(){if(!giscloud.ui||!giscloud.ui.modal)i("#dont_have_account_bt").hide();i("#loginField").focus();showNamePrefix()})})(jQuery);

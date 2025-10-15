@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" style="" class="js no-touch cssanimations csstransitions win firefox firefox1 gecko gecko1"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--[if gte IE 10]>
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <![endif]-->
+    <!--[if lt IE 10]>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <![endif]-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <link rel="apple-touch-icon-precomposed" href="https://assets.giscloud.com/assets/images/gclogo_apple_touch_115.png">
+    
+    <link type="text/css" rel="stylesheet" media="screen" href="a_data/compiled-smart.css">
+
+    	<script type="text/javascript">var user = {id:-1};
+;
+user.options = {"DATAGRID_2":"0","MODULE_HOMEPAGE":"1","BLOG_HIDE":"1","THEME_COLOR":"#3a552d","LOGIN_PAGE_ONLY":"1","HOMEPAGE_MAPS_ACTIVE":"shared","MODULE_DATAGRID":"1","LOGO_LINK":"\/","LOGIN_PAGE_LOGO_URL":"https:\/\/giscloud-custom-logo.s3.us-east-1.amazonaws.com\/Geotech_logo.png","LOGIN_PAGE_HIDE_APP_TITLE":"1","MODULE_LOGIN_BOX":"1","MODULE_SEARCH":"0","MODULE_SSO":"0","HOMEPAGE_MAPS":"my,shared","TOOLBAR_ELEMENTS":"search,togglemenu,layerlist,info,measure,selectarea,scale","THEME_HOVER_COLOR":"#344d29","DEFAULT_MAP_ID":"2084089","FEATURE_MDC_LICENSE":"1","MAP_577124_LAYERS_DISPLAY":"{\u00225269173\u0022:{\u0022display\u0022:{\u0022visible\u0022:true}}}"};
+
+user.permissions = [];var fno = {};fno.giscloud = true;fno.domain = "giscloud.com";fno.serverName = "cegeotech.giscloud.com";fno.liveSite = "https://cegeotech.giscloud.com/";fno.assetsSite = "https://assets.giscloud.com/";fno.liveSSLSite = "https://cegeotech.giscloud.com/";fno.omfPath = "https://cegeotech.giscloud.com/assets/omf/";fno.resourcesSite = "https://resources.giscloud.com/";fno.viewerSite = "https://viewer.giscloud.com/";fno.editorSite = "https://editor.giscloud.com/";fno.streetview_portal_url = "https://maps.google.com/maps?layer=c&cbll=%f,%f";fno.path = "/media/data/giscloud/www/"; fno.resources = "/opt/giscloud/resources"; fno.name = "CE Geotech Map Viewer"; fno.cgi = true;fno.editable = true;fno.fullaccess = 1;fno.wms = true;fno.fnwdebug = false;fno.liveSiteUser = fno.liveSSLSite;fno.richmedia = true;fno.remote_download = true;fno.geocommons = false;fno.showArcMapInSourceBrowser = true;fno.showMapBoxInSourceBrowser = true;fno.payment = true;fno.enableNewTrackApp = false;fno.app_instance_id = '111543';fno.app_instance_owner_id = '229206';fno.app_instance_resource_id = '23759594';fno.app_instance_type = 'mapviewer';fno.app_id = '7';fno.forceSSLForUserData = true;
+       fno.gcinit_auth = {"type":0,"logged":false,"fullaccess":0};
+       fno.gcinit_activelayout = 'default';
+       fno.gcinit_taskmanager = false;
+       fno.gcinit_richmedia = true;
+       fno.gcinit_giscloud = true;
+       fno.gcinit_epostgis = true;
+       fno.gcinit_fleetmanagement = true;
+       fno.gcinit_mobile = true;
+       fno.gcinit_docs_url = 'https://manual.giscloud.com';
+       fno.gcinit_dynamicRefreshInterval = 30;
+       fno.gcinit_renderingmode = 0;
+       fno.gcinit_editor_id = '100004'*1;
+       fno.gcinit_viewer_id = '100003'*1;
+       fno.gcinit_manager_id = '102009'*1;
+       fno.gcinit_mdc_portal_id = '102050'*1;
+       fno.blog_and_video_section = '1'*1;
+       fno.blog_category_id = '3';
+       fno.maps_category_id = '';
+       fno.video_category_id = '';
+       fno.disable_new_datagrid = '';
+fno.here_search_app_id = 'bMXIdiBbYTCR4O14WSlN';
+fno.here_search_app_code = 'PRnjzWuHGMCagCLGWURjAQ';
+fno.stripe_pkey = 'pk_live_cmxMR23NbgLO1UBnFWUqhUKa';
+       fno.mobilebrowser = false;
+       fno.mobilephone = false;
+fno.newHeader = false;if (!self.giscloud_config) {
+
+giscloud_config = {
+    restHost : function () {  return "https://api.giscloud.com"; },
+    apiHost : function () {
+        if (document.location.protocol === "https:")
+            return "https://api.giscloud.com";
+        else
+            return "http://api.giscloud.com";
+    },
+    authHost : function () {  return "https://auth.giscloud.com"; },
+    liveSite : function () {  return "https://cegeotech.giscloud.com/"; },
+    leafletScript : function () { return "leaflet.js"; },
+    nch : "54f3d4b",
+    tileSite : function () {
+        var tile_site =  "https://tiles.giscloud.com/";
+        if (tile_site) {
+            return tile_site;
+        }
+        var domain = "giscloud.com" || "giscloud.com";
+        var subdomain_pattern = new RegExp("\\S+\\." + domain.replace(/\./g, "\\.") + "$", "i");
+        if (document && document.location && document.location.host &&
+            document.location.host !== "dev.giscloud.com" &&
+            document.location.host.match(subdomain_pattern)) {
+
+            return document.location.protocol + "//" + document.location.host + "/";
+        }
+
+        return "https://tiles.giscloud.com/";
+    },
+    assetsSite : function() {
+        return  "https://assets.giscloud.com/";
+    },
+    tileImageProxySite: function() {
+        var proxy = "https://proxy.giscloud.com/{url}";
+        return proxy ? proxy : this.tileSite() + "tms/image_proxy?url={url}&mid={mid}";
+    },
+    https : true};
+
+}</script>
+	<script type="text/javascript">
+		var _nch = '54f3d4b';
+	</script>
+
+    <script type="text/javascript" src="a_data/language.js.php"></script>
+    <script type="text/javascript" src="a_data/api.js"></script>
+
+    <script type="text/javascript">
+        var jQuery = giscloud.exposeJQuery();
+    </script>
+
+    <script type="text/javascript" src="a_data/bootstrap.min.js"></script>
+    <script type="text/javascript" src="a_data/jquery.loader.js"></script>
+
+    <script type="text/javascript" src="a_data/loginpage.js"></script>
+
+    	<script type="text/javascript" src="a_data/compiled-smart.js"></script>
+
+    
+    <script src="a_data/iframecheck.js"></script>
+
+    <title>CE Geotech Map Viewer</title>
+
+<link href="https://assets.giscloud.com/libs/mapbox-gl/mapbox-gl.js?_nch=54f3d4b" rel="prefetch" as="script"><link href="https://assets.giscloud.com/libs/mapbox-gl/mapbox-gl-draw.js?_nch=54f3d4b" rel="prefetch" as="script"><link href="https://assets.giscloud.com/libs/mapbox-gl/mapbox-gl.css?_nch=54f3d4b" rel="prefetch" as="style"><link href="https://assets.giscloud.com/assets/api/1/viewer/mapbox/viewer.mapbox.css?_nch=54f3d4b" rel="prefetch" as="style"></head>
+
+<body class="">
+    <div class="logocont">
+        <a href="https://www.giscloud.com/"><img src="a_data/Geotech_logo.png" alt="CE Geotech Map Viewer" title="CE Geotech Map Viewer" class="logo" style="float:none"></a>
+        
+            </div>
+
+    
+<div class="clear"></div>
+<div class="loginbox  ">
+
+    <form action="https://cegeotech.giscloud.com/" method="POST" onsubmit="$('#loginSubmitButton')[0].disabled = true;">
+
+        <label id="loginUserLabel">Username or email</label>
+        <input id="loginField" type="text" autocapitalize="none" name="username" placeholder="Username or email"><br>
+
+        <label id="loginPassLabel">Password</label>
+        <input type="password" name="password" placeholder="Password"> <br>
+
+        <input type="hidden" name="logreq" value="login">
+        
+        
+        
+        
+        <div style="height: 50px">
+            <div style="margin-top: 15px; float:right;">
+                <button id="loginSubmitButton" class="btn btn-primary text-center">Login</button>
+            </div>
+            <div class="clear"></div>
+                    </div>
+
+        <div class="clear"></div>
+
+        
+    </form>
+</div>
+
+    <div style="margin:3px auto; width:180px;text-align:center;">
+        <span class="logincopyright">2025            © <a href="https://www.giscloud.com/" target="_blank">GIS Cloud</a>
+        </span>
+    </div>
+
+    
+
+
+
+
+<ul class="vakata-context"></ul><div id="jstree-marker" style="display: none;">&nbsp;</div><div class="gc-alert"></div><div id="notify-container" style="" class="ui-notify"></div></body></html>
